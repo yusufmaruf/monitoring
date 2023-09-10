@@ -29,7 +29,7 @@
                with font-awesome or any other icon font library -->
                 <li class="nav-item">
                     <a href="{{ route('adminDashboard.index') }}"
-                        class="nav-link {{ request()->is('admin/dashboard*') ? 'active' : '' }} ">
+                        class="nav-link {{ request()->is('admin/adminDashboard*') ? 'active' : '' }} ">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
                             Dashboard
@@ -38,7 +38,8 @@
                 </li>
                 <li class="nav-header">Maste Data</li>
                 <li class="nav-item">
-                    <a href="" class="nav-link {{ request()->is('admin/admins*') ? 'active' : '' }}">
+                    <a href="{{ route('admins.index') }}"
+                        class="nav-link {{ request()->is('admin/admin*') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-user-cog"></i>
                         <p>
                             Admin
