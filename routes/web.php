@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminDashboardController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -17,6 +18,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('layouts.dashboard');
 });
+Route::resource('adminDashboard', AdminDashboardController::class);
+
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
