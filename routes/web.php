@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AdminDashboardController;
+use App\Http\Controllers\BidangController;
 use App\Http\Controllers\DepartementController;
 use App\Http\Controllers\DirekturController;
 use App\Http\Controllers\KAbidangController;
@@ -38,6 +39,7 @@ Route::prefix('admin')
         Route::resource('kabidang', KAbidangController::class);
         Route::resource('staff', StaffController::class);
         Route::resource('departement', DepartementController::class);
+        Route::resource('bidang', BidangController::class);
     });
 
 

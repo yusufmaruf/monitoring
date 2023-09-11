@@ -24,8 +24,18 @@
                                 <form method="POST" enctype="multipart/form-data" action="">
                                     @csrf
                                     @method('PUT')
+                                    <div class="form-group">
+                                        <label>Departement</label>
+                                        <select name="idDepartement" class="form-control select2bs4" style="width: 100%;">
+                                            <option value="" selected="selected">--- Pilih Departement ---
+                                            </option>
+                                            <option value="idDepartment">Departement</option>
+
+                                        </select>
+                                    </div>
                                     <div class="mb-3">
-                                        <label for="name" class="form-label">Name</label>
+
+                                        <label for="name" class="form-label">Bidang</label>
                                         <input type="text" class="form-control" id="name" value=""
                                             name="name">
                                     </div>

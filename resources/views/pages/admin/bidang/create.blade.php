@@ -5,10 +5,10 @@
     <link rel="stylesheet" href="{{ asset('plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css') }}">
 @endpush
 @section('title')
-    Departement || Data Departement
+    Bidang || Data Bidang
 @endsection
 @section('pages')
-    Add Departement
+    Add Bidang
 @endsection
 @section('content')
     <section class="content">
@@ -23,8 +23,16 @@
                             <div class="card-body">
                                 <form action="" method="post" enctype="multipart/form-data">
                                     @csrf
+                                    <div class="form-group">
+                                        <label>Departement</label>
+                                        <select name="idDepartement" class="form-control select2bs4" style="width: 100%;">
+                                            <option value="" selected="selected">--- Pilih Departement --- </option>
+                                            <option value="idDepartment">Departement</option>
+
+                                        </select>
+                                    </div>
                                     <div class="mb-3">
-                                        <label for="name" class="form-label">Name</label>
+                                        <label for="name" class="form-label">Bidang</label>
                                         <input type="text" class="form-control" id="name" name="name">
                                     </div>
 

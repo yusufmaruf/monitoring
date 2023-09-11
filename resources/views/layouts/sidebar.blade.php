@@ -47,8 +47,8 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{ route('staff.index') }}"
-                        class="nav-link {{ request()->is('admin/sector*') ? 'active' : '' }}">
+                    <a href="{{ route('bidang.index') }}"
+                        class="nav-link {{ request()->is('admin/bidang*') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-monument"></i>
                         <p>
                             Bidang

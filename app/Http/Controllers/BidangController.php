@@ -11,7 +11,7 @@ class BidangController extends Controller
      */
     public function index()
     {
-        //
+        return view('pages.admin.bidang.index');
     }
 
     /**
@@ -19,7 +19,7 @@ class BidangController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.admin.bidang.create');
     }
 
     /**
@@ -35,7 +35,7 @@ class BidangController extends Controller
      */
     public function show(string $id)
     {
-        //
+        return view('pages.admin.bidang.view');
     }
 
     /**
@@ -43,7 +43,7 @@ class BidangController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        return view('pages.admin.bidang.update');
     }
 
     /**

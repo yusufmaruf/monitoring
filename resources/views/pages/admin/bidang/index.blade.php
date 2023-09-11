@@ -14,8 +14,8 @@
 
                         <div class="card">
                             <div class="card-header">
-                                <a href="{{ route('departement.create') }}" class="btn btn-info">
-                                    + Tambah Departement Baru</a>
+                                <a href="{{ route('bidang.create') }}" class="btn btn-info">
+                                    + Tambah Bidang Baru</a>
                             </div>
                             <!-- /.card-header -->
                             <div class="card-body">
@@ -24,6 +24,7 @@
                                         <tr>
                                             <th style="width: 20px">No</th>
                                             <th>Nama Departement</th>
+                                            <th>Nama Bidang</th>
                                             <th style="width: 50px">Action</th>
                                         </tr>
                                     </thead>
@@ -33,12 +34,13 @@
                                         <tr>
                                             <td>No</td>
                                             <td>Nama Departement</td>
+                                            <td>Nama Bidang</td>
                                             <td>
                                                 <div class="btn-group" role="group"
                                                     aria-label="Basic mixed styles example">
-                                                    <a href="{{ route('departement.show', 1) }}"
+                                                    <a href="{{ route('bidang.show', 1) }}"
                                                         class="btn btn-primary mr-2">view</a>
-                                                    <a href="{{ route('departement.edit', 1) }}"
+                                                    <a href="{{ route('bidang.edit', 1) }}"
                                                         class="btn btn-warning mr-2">edit</a>
                                                     <button type="button" data-toggle="modal" data-target="#delete"
                                                         class="btn btn-danger mr-2">delete</button>
