@@ -6,6 +6,7 @@ use App\Http\Controllers\DirekturController;
 use App\Http\Controllers\KAbidangController;
 use App\Http\Controllers\KAdepartementController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\StaffController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -34,6 +35,7 @@ Route::prefix('admin')
         Route::resource('direktur', DirekturController::class);
         Route::resource('kadepartement', KAdepartementController::class);
         Route::resource('kabidang', KAbidangController::class);
+        Route::resource('staff', StaffController::class);
     });
 
 

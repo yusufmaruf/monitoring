@@ -74,7 +74,8 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link {{ request()->is('admin/standard*') ? 'active' : '' }}">
+                    <a href="{{ route('staff.index') }}"
+                        class="nav-link {{ request()->is('admin/staff*') ? 'active' : '' }}">
                         <i class="nav-icon fas fas fa-users"></i>
                         <p>
                             Staff
