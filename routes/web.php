@@ -3,6 +3,7 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AdminDashboardController;
 use App\Http\Controllers\DirekturController;
+use App\Http\Controllers\KAdepartementController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -30,6 +31,7 @@ Route::prefix('admin')
         Route::resource('adminDashboard', AdminDashboardController::class);
         Route::resource('admins', AdminController::class);
         Route::resource('direktur', DirekturController::class);
+        Route::resource('kadepartement', KAdepartementController::class);
     });
 
 

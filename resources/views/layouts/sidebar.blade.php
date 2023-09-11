@@ -56,10 +56,11 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link {{ request()->is('admin/tendik*') ? 'active' : '' }}">
+                    <a href="{{ route('kadepartement.index') }}"
+                        class="nav-link {{ request()->is('admin/kadepartement*') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-user-ninja"></i>
                         <p>
-                            Departemen
+                            KA Departemen
                         </p>
                     </a>
                 </li>
@@ -67,7 +68,7 @@
                     <a href="" class="nav-link {{ request()->is('admin/assesor*') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-user-shield"></i>
                         <p>
-                            Bidang
+                            KA Bidang
                         </p>
                     </a>
                 </li>
