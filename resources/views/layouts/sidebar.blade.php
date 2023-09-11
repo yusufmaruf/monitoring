@@ -36,7 +36,7 @@
                         </p>
                     </a>
                 </li>
-                <li class="nav-header">Maste Data</li>
+                <li class="nav-header">Master Data</li>
                 <li class="nav-item">
                     <a href="{{ route('admins.index') }}"
                         class="nav-link {{ request()->is('admin/admin*') ? 'active' : '' }}">
@@ -65,7 +65,8 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link {{ request()->is('admin/assesor*') ? 'active' : '' }}">
+                    <a href="{{ route('kabidang.index') }}"
+                        class="nav-link {{ request()->is('admin/kabidang*') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-user-shield"></i>
                         <p>
                             KA Bidang

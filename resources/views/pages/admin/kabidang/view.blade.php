@@ -5,9 +5,10 @@
     <link rel="stylesheet" href="{{ asset('plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css') }}">
 @endpush
 @section('title')
-    Kepala Departement || Kepala Departement
+    Kepala Bidang || Kepala Bidang
+@endsection
 @section('pages')
-    Update Kepala Departement
+    Update Kepala Bidang
 @endsection
 @section('content')
     <section class="content">
@@ -64,6 +65,15 @@
                                             disabled>
                                             <option value="" selected="selected">--- Pilih Departement --- </option>
                                             <option value="idDepartment">Departement</option>
+
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Bidang</label>
+                                        <select name="idDepartement" class="form-control select2bs4" style="width: 100%;"
+                                            disabled>
+                                            <option value="" selected="selected">--- Pilih Bidang --- </option>
+                                            <option value="idDepartment">Bidang</option>
 
                                         </select>
                                     </div>

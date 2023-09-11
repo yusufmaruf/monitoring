@@ -1,9 +1,9 @@
 @extends('layouts.dashboard')
 @section('title')
-    Kepala Departement || Data Kepala Departement
+    Kepala Bidang || Data Kepala Bidang
 @endsection
 @section('pages')
-    Data Kepala Departement
+    Data Kepala Bidang
 @endsection
 @section('content')
     <section class="content">
@@ -14,8 +14,8 @@
 
                         <div class="card">
                             <div class="card-header">
-                                <a href="{{ route('kadepartement.create') }}" class="btn btn-info">
-                                    + Tambah Kepala Department Baru</a>
+                                <a href="{{ route('kabidang.create') }}" class="btn btn-info">
+                                    + Tambah Kepala Bidang Baru</a>
                             </div>
                             <!-- /.card-header -->
                             <div class="card-body">
@@ -23,11 +23,12 @@
                                     <thead>
                                         <tr>
                                             <th style="width: 20px">No</th>
-                                            <th>Nama KADEP</th>
+                                            <th>Nama KABID</th>
                                             <th>NIDN</th>
                                             <th>Email</th>
                                             <th>phone</th>
                                             <th>Departement</th>
+                                            <th>Bidang</th>
                                             <th>address</th>
                                             <th style="width: 50px">Action</th>
                                         </tr>
@@ -42,13 +43,14 @@
                                             <td>Email</td>
                                             <td>Phone Number</td>
                                             <td>Departement</td>
+                                            <td>Bidang</td>
                                             <td>Alamat</td>
                                             <td>
                                                 <div class="btn-group" role="group"
                                                     aria-label="Basic mixed styles example">
-                                                    <a href="{{ route('kadepartement.show', 1) }}"
+                                                    <a href="{{ route('kabidang.show', 1) }}"
                                                         class="btn btn-primary mr-2">view</a>
-                                                    <a href="{{ route('kadepartement.edit', 1) }}"
+                                                    <a href="{{ route('kabidang.edit', 1) }}"
                                                         class="btn btn-warning mr-2">edit</a>
                                                     <button type="button" data-toggle="modal" data-target="#delete"
                                                         class="btn btn-danger mr-2">delete</button>
@@ -78,7 +80,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p>Apakah Anda Ingin Menghapus Data Kepala Direktur Ini?&hellip;</p>
+                    <p>Apakah Anda Ingin Menghapus Data Kepala Bidang Ini?&hellip;</p>
                 </div>
                 <div class="modal-footer justify-content-between">
                     <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
