@@ -1,9 +1,9 @@
 @extends('layouts.dashboard')
 @section('title')
-    Staff || Data Staff
+    Departement || Data Departement
 @endsection
 @section('pages')
-    Data Staff
+    Data Departement
 @endsection
 @section('content')
     <section class="content">
@@ -14,8 +14,8 @@
 
                         <div class="card">
                             <div class="card-header">
-                                <a href="{{ route('staff.create') }}" class="btn btn-info">
-                                    + Tambah Staff Baru</a>
+                                <a href="{{ route('departement.create') }}" class="btn btn-info">
+                                    + Tambah Departement Baru</a>
                             </div>
                             <!-- /.card-header -->
                             <div class="card-body">
@@ -23,13 +23,7 @@
                                     <thead>
                                         <tr>
                                             <th style="width: 20px">No</th>
-                                            <th>Nama Staff</th>
-                                            <th>NIDN</th>
-                                            <th>Email</th>
-                                            <th>phone</th>
-                                            <th>address</th>
-                                            <th>Departement</th>
-                                            <th>Bidang</th>
+                                            <th>Nama Departement</th>
                                             <th style="width: 50px">Action</th>
                                         </tr>
                                     </thead>
@@ -38,19 +32,13 @@
                                         {{-- @foreach ($admin as $data) --}}
                                         <tr>
                                             <td>No</td>
-                                            <td>Name</td>
-                                            <td>Nidn</td>
-                                            <td>Email</td>
-                                            <td>Phone Number</td>
-                                            <td>Alamat</td>
-                                            <td>Departement</td>
-                                            <td>Bidang</td>
+                                            <td>Nama Departement</td>
                                             <td>
                                                 <div class="btn-group" role="group"
                                                     aria-label="Basic mixed styles example">
-                                                    <a href="{{ route('staff.show', 1) }}"
+                                                    <a href="{{ route('departement.show', 1) }}"
                                                         class="btn btn-primary mr-2">view</a>
-                                                    <a href="{{ route('staff.edit', 1) }}"
+                                                    <a href="{{ route('departement.edit', 1) }}"
                                                         class="btn btn-warning mr-2">edit</a>
                                                     <button type="button" data-toggle="modal" data-target="#delete"
                                                         class="btn btn-danger mr-2">delete</button>
@@ -80,7 +68,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p>Apakah Anda Ingin Menghapus Data Staff Ini?&hellip;</p>
+                    <p>Apakah Anda Ingin Menghapus Data Departement Ini?&hellip;</p>
                 </div>
                 <div class="modal-footer justify-content-between">
                     <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>

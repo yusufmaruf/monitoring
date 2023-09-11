@@ -38,6 +38,24 @@
                 </li>
                 <li class="nav-header">Master Data</li>
                 <li class="nav-item">
+                    <a href="{{ route('departement.index') }}"
+                        class="nav-link {{ request()->is('admin/departement*') ? 'active' : '' }}">
+                        <i class="nav-icon fas fa-landmark"></i>
+                        <p>
+                            Departement
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{{ route('staff.index') }}"
+                        class="nav-link {{ request()->is('admin/sector*') ? 'active' : '' }}">
+                        <i class="nav-icon fas fa-monument"></i>
+                        <p>
+                            Bidang
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
                     <a href="{{ route('admins.index') }}"
                         class="nav-link {{ request()->is('admin/admin*') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-user-cog"></i>
@@ -82,6 +100,7 @@
                         </p>
                     </a>
                 </li>
+
                 <li class="nav-header">Manajemen Tugas</li>
 
                 <li class="nav-item">
