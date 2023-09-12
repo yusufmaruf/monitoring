@@ -24,15 +24,6 @@
                                 <form method="POST" enctype="multipart/form-data" action="">
                                     @csrf
                                     @method('PUT')
-                                    <div class="form-group">
-                                        <label>Bidang</label>
-                                        <select name="idDepartement" class="form-control select2bs4" style="width: 100%;"
-                                            disabled>
-                                            <option value="" selected="selected">--- Pilih Bidang --- </option>
-                                            <option value="idDepartment">Departement</option>
-
-                                        </select>
-                                    </div>
                                     <div class="mb-3">
                                         <label for="name" class="form-label">Name</label>
                                         <input type="text" class="form-control" id="name" name="name" disabled>
@@ -52,14 +43,6 @@
                                     <div class="mb-3">
                                         <label for="name" class="form-label">Deadline</label>
                                         <input type="date" class="form-control" id="name" name="name" disabled>
-                                    </div>
-                                    <div class="form-group">
-                                        <label>Status Task</label>
-                                        <select name="idDepartement" class="form-control select2bs4" style="width: 100%;">
-                                            <option value="" selected="selected">--- Status --- </option>
-                                            <option value="idDepartment">Masih Di Bidang</option>
-
-                                        </select>
                                     </div>
                                     <button type="submit" class="btn btn-primary">Submit</button>
                                 </form>

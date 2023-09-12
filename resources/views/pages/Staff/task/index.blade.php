@@ -13,10 +13,6 @@
                     <div class="table-responsive">
 
                         <div class="card">
-                            <div class="card-header">
-                                <a href="{{ route('taskdepartement.create') }}" class="btn btn-info">
-                                    + Tambah Task Baru</a>
-                            </div>
                             <!-- /.card-header -->
                             <div class="card-body">
                                 <table id="example1" class="table table-bordered table-striped">
@@ -26,7 +22,6 @@
                                             <th>Deadline</th>
                                             <th>Task</th>
                                             <th>Desc</th>
-                                            <th>Bidang</th>
                                             <th>Dokumen</th>
                                             <th>Status</th>
                                             <th style="width: 50px">Action</th>
@@ -40,19 +35,14 @@
                                             <td>Deadline</td>
                                             <td>Task</td>
                                             <td>Desc</td>
-                                            <td>Bidang</td>
                                             <td>Dokumen</td>
                                             <td>Semua Status</td>
                                             <td>
                                                 <div class="btn-group" role="group"
                                                     aria-label="Basic mixed styles example">
                                                     <a href="#" class="btn btn-success mr-2">View</a>
-                                                    <a href="{{ route('taskdepartement.edit', 1) }}"
-                                                        class="btn btn-secondary mr-2">edit</a>
-                                                    <a href="{{ route('taskdepartement.edit', 1) }}"
-                                                        class="btn btn-primary mr-2">Teruskan</a>
-                                                    <a href="{{ route('taskdepartement.show', 1) }}"
-                                                        class="btn btn-warning mr-2">Koreksi</a>
+                                                    <a href="{{ route('taskstaff.edit', 1) }}"
+                                                        class="btn btn-primary mr-2">Kerjakan</a>
                                                 </div>
                                             </td>
                                         </tr>

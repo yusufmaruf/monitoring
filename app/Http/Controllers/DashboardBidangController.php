@@ -4,14 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class TaskStaffController extends Controller
+class DashboardBidangController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        return view('pages.Staff.task.index');
+        return view('pages.Bidang.dashboard.index');
     }
 
     /**
@@ -35,7 +35,7 @@ class TaskStaffController extends Controller
      */
     public function show(string $id)
     {
-        return view('pages.Staff.task.view');
+        //
     }
 
     /**
@@ -43,7 +43,7 @@ class TaskStaffController extends Controller
      */
     public function edit(string $id)
     {
-        return view('pages.Staff.task.update');
+        //
     }
 
     /**

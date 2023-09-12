@@ -25,14 +25,7 @@
                                 <form method="POST" enctype="multipart/form-data" action="">
                                     @csrf
                                     @method('PUT')
-                                    <div class="form-group">
-                                        <label>Bidang</label>
-                                        <select name="idDepartement" class="form-control select2bs4" style="width: 100%;">
-                                            <option value="" selected="selected">--- Pilih Bidang --- </option>
-                                            <option value="idDepartment">Departement</option>
 
-                                        </select>
-                                    </div>
                                     <div class="mb-3">
                                         <label for="name" class="form-label">Name</label>
                                         <input type="text" class="form-control" id="name" name="name">
@@ -48,14 +41,10 @@
                                         <label for="name" class="form-label">Deadline</label>
                                         <input type="date" class="form-control" id="name" name="name">
                                     </div>
-                                    <div class="form-group">
-                                        <label>Status</label>
-                                        <select name="idDepartement" class="form-control select2bs4" style="width: 100%;">
-                                            <option value="" selected="selected">--- Pilih Status --- </option>
-                                            <option value="idDepartment">Selesai</option>
-                                            <option value="idDepartment">Revisi</option>
 
-                                        </select>
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Document</label>
+                                        <input type="file" class="form-control" id="name" name="name">
                                     </div>
 
 
