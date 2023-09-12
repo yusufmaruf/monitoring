@@ -3,6 +3,10 @@
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\AdminDashboardController;
 use App\Http\Controllers\BidangController;
+use App\Http\Controllers\DashboardBidangController;
+use App\Http\Controllers\DashboardDepartementController;
+use App\Http\Controllers\DashboardDirekturController;
+use App\Http\Controllers\DashboardStaffController;
 use App\Http\Controllers\DepartementController;
 use App\Http\Controllers\DirekturController;
 use App\Http\Controllers\DocumentTaskController;
@@ -56,6 +60,11 @@ Route::prefix('admin')
         Route::resource('taskdepartement', TaskDepartementController::class);
         Route::resource('taskbidang', TaskBidangController::class);
         Route::resource('taskstaff', TaskStaffController::class);
+
+        Route::resource('dashboarddirektur', DashboardDirekturController::class);
+        Route::resource('dashboarddepartement', DashboardDepartementController::class);
+        Route::resource('dashboardbidang', DashboardBidangController::class);
+        Route::resource('dashboardstaff', DashboardStaffController::class);
     });
 
 
