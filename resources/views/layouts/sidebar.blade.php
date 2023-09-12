@@ -154,6 +154,30 @@
                     </a>
                 </li>
 
+                {{-- Tugas Direktur  --}}
+                <li class="nav-header">Task Bidang</li>
+                <li class="nav-item">
+                    <a href="{{ route('taskdepartement.index') }}"
+                        class="nav-link {{ request()->is('admin/taskdepartement*') ? 'active' : '' }}">
+                        <i class="nav-icon fas fa-tasks"></i>
+                        <p>
+                            Tugas
+                        </p>
+                    </a>
+                </li>
+
+                {{-- Tugas Direktur  --}}
+                <li class="nav-header">Task Staff</li>
+                <li class="nav-item">
+                    <a href="{{ route('taskdepartement.index') }}"
+                        class="nav-link {{ request()->is('admin/taskdepartement*') ? 'active' : '' }}">
+                        <i class="nav-icon fas fa-tasks"></i>
+                        <p>
+                            Tugas
+                        </p>
+                    </a>
+                </li>
+
 
 
 
