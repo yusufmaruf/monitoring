@@ -104,7 +104,8 @@
                 <li class="nav-header">Manajemen Tugas</li>
 
                 <li class="nav-item">
-                    <a href="" class="nav-link {{ request()->is('admin/aspect*') ? 'active' : '' }}">
+                    <a href="{{ route('task.index') }}"
+                        class="nav-link {{ request()->is('admin/task*') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-tasks"></i>
                         <p>
                             Tugas
@@ -112,7 +113,8 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link {{ request()->is('admin/task*') ? 'active' : '' }}">
+                    <a href="{{ route('draft.index') }}"
+                        class="nav-link {{ request()->is('admin/draft*') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-file-word"></i>
                         <p>
                             Draft Surat
@@ -120,7 +122,8 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link {{ request()->is('admin/dokumenaspek*') ? 'active' : '' }}">
+                    <a href="{{ route('document.index') }}"
+                        class="nav-link {{ request()->is('admin/document*') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-file-pdf"></i>
                         <p>
                             Dokumen Surat

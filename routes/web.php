@@ -5,10 +5,13 @@ use App\Http\Controllers\AdminDashboardController;
 use App\Http\Controllers\BidangController;
 use App\Http\Controllers\DepartementController;
 use App\Http\Controllers\DirekturController;
+use App\Http\Controllers\DocumentTaskController;
+use App\Http\Controllers\DraftController;
 use App\Http\Controllers\KAbidangController;
 use App\Http\Controllers\KAdepartementController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\StaffController;
+use App\Http\Controllers\TaskController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -40,6 +43,9 @@ Route::prefix('admin')
         Route::resource('staff', StaffController::class);
         Route::resource('departement', DepartementController::class);
         Route::resource('bidang', BidangController::class);
+        Route::resource('task', TaskController::class);
+        Route::resource('draft', DraftController::class);
+        Route::resource('document', DocumentTaskController::class);
     });
 
 
