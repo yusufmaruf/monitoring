@@ -102,7 +102,6 @@
                 </li>
 
                 <li class="nav-header">Manajemen Tugas</li>
-
                 <li class="nav-item">
                     <a href="{{ route('task.index') }}"
                         class="nav-link {{ request()->is('admin/task*') ? 'active' : '' }}">
@@ -130,6 +129,34 @@
                         </p>
                     </a>
                 </li>
+
+                {{-- Tugas Direktur  --}}
+                <li class="nav-header">Task Direktur</li>
+                <li class="nav-item">
+                    <a href="{{ route('taskdirektur.index') }}"
+                        class="nav-link {{ request()->is('admin/taskdirektur*') ? 'active' : '' }}">
+                        <i class="nav-icon fas fa-tasks"></i>
+                        <p>
+                            Tugas
+                        </p>
+                    </a>
+                </li>
+
+                {{-- Tugas Direktur  --}}
+                <li class="nav-header">Task Departement</li>
+                <li class="nav-item">
+                    <a href="{{ route('taskdirektur.index') }}"
+                        class="nav-link {{ request()->is('admin/taskdirektur*') ? 'active' : '' }}">
+                        <i class="nav-icon fas fa-tasks"></i>
+                        <p>
+                            Tugas
+                        </p>
+                    </a>
+                </li>
+
+
+
+
                 <li class="nav-header">Broadcasting</li>
 
                 <li class="nav-item">
