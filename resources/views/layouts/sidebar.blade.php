@@ -157,8 +157,8 @@
                 {{-- Tugas Direktur  --}}
                 <li class="nav-header">Task Bidang</li>
                 <li class="nav-item">
-                    <a href="{{ route('taskdepartement.index') }}"
-                        class="nav-link {{ request()->is('admin/taskdepartement*') ? 'active' : '' }}">
+                    <a href="{{ route('taskbidang.index') }}"
+                        class="nav-link {{ request()->is('admin/taskbidang*') ? 'active' : '' }}">
                         <i class="nav-icon fas fa-tasks"></i>
                         <p>
                             Tugas
