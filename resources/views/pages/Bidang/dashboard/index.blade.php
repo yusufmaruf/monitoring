@@ -16,7 +16,7 @@
                         <div class="inner">
                             <h3></h3>
 
-                            <p>Jumlah Direktur</p>
+                            <p>Jumlah Staff</p>
 
                         </div>
                         <div class="icon">
@@ -33,7 +33,7 @@
                         <div class="inner">
                             <h3></h3>
 
-                            <p>Jumlah Departement</p>
+                            <p>Jumlah Tugas Belum Selesai</p>
                         </div>
                         <div class="icon">
                             <i class="fas fa-user-ninja"></i>
@@ -48,7 +48,7 @@
                         <div class="inner">
                             <h3></h3>
 
-                            <p>Jumlah Bidang</p>
+                            <p>Jumlah Tugas Selesai</p>
                         </div>
                         <div class="icon">
                             <i class="fas fa-user-shield"></i>
@@ -56,29 +56,13 @@
                         <a href="" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                     </div>
                 </div>
-                <!-- ./col -->
-                <div class="col-lg-3 col-6">
-                    <!-- small box -->
-                    <div class="small-box bg-danger">
-                        <div class="inner">
-                            <h3></h3>
-
-                            <p>Jumlah Staff</p>
-                        </div>
-                        <div class="icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <a href="" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
-                    </div>
-                </div>
-                <!-- ./col -->
             </div>
 
             <div class="row mb-2">
                 <div class="col-lg-12">
                     <div class="card card-danger">
                         <div class="card-header">
-                            <h3 class="card-title">Jumlah Bidang Dalam Aspek</h3>
+                            <h3 class="card-title">Jumlah Tugas Selesai dan Belum Selesai</h3>
 
                             <div class="card-tools">
                                 <button type="button" class="btn btn-tool" data-card-widget="collapse">

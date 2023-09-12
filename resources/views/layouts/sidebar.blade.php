@@ -131,7 +131,17 @@
                 </li>
 
                 {{-- Tugas Direktur  --}}
-                <li class="nav-header">Task Direktur</li>
+                <li class="nav-header">Menu Direktur</li>
+                <li class="nav-item">
+                    <a href="{{ route('dashboarddirektur.index') }}"
+                        class="nav-link {{ request()->is('admin/dashboarddirektur*') ? 'active' : '' }} ">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <p>
+                            Dashboard
+                        </p>
+                    </a>
+                </li>
+
                 <li class="nav-item">
                     <a href="{{ route('taskdirektur.index') }}"
                         class="nav-link {{ request()->is('admin/taskdirektur*') ? 'active' : '' }}">
@@ -143,7 +153,16 @@
                 </li>
 
                 {{-- Tugas Direktur  --}}
-                <li class="nav-header">Task Departement</li>
+                <li class="nav-header">Menu Departement</li>
+                <li class="nav-item">
+                    <a href="{{ route('dashboarddepartement.index') }}"
+                        class="nav-link {{ request()->is('admin/dashboarddepartement*') ? 'active' : '' }} ">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <p>
+                            Dashboard
+                        </p>
+                    </a>
+                </li>
                 <li class="nav-item">
                     <a href="{{ route('taskdepartement.index') }}"
                         class="nav-link {{ request()->is('admin/taskdepartement*') ? 'active' : '' }}">
@@ -155,7 +174,16 @@
                 </li>
 
                 {{-- Tugas Direktur  --}}
-                <li class="nav-header">Task Bidang</li>
+                <li class="nav-header">Menu Bidang</li>
+                <li class="nav-item">
+                    <a href="{{ route('dashboardbidang.index') }}"
+                        class="nav-link {{ request()->is('admin/dashboardbidang*') ? 'active' : '' }} ">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <p>
+                            Dashboard
+                        </p>
+                    </a>
+                </li>
                 <li class="nav-item">
                     <a href="{{ route('taskbidang.index') }}"
                         class="nav-link {{ request()->is('admin/taskbidang*') ? 'active' : '' }}">
@@ -168,6 +196,15 @@
 
                 {{-- Tugas Direktur  --}}
                 <li class="nav-header">Task Staff</li>
+                <li class="nav-item">
+                    <a href="{{ route('dashboardstaff.index') }}"
+                        class="nav-link {{ request()->is('admin/dashboardstaff*') ? 'active' : '' }} ">
+                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <p>
+                            Dashboard
+                        </p>
+                    </a>
+                </li>
                 <li class="nav-item">
                     <a href="{{ route('taskstaff.index') }}"
                         class="nav-link {{ request()->is('admin/taskstaff*') ? 'active' : '' }}">

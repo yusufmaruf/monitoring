@@ -16,7 +16,7 @@
                         <div class="inner">
                             <h3></h3>
 
-                            <p>Jumlah Direktur</p>
+                            <p>Jumlah Departement</p>
 
                         </div>
                         <div class="icon">
@@ -33,7 +33,7 @@
                         <div class="inner">
                             <h3></h3>
 
-                            <p>Jumlah Departement</p>
+                            <p>Jumlah Bidang</p>
                         </div>
                         <div class="icon">
                             <i class="fas fa-user-ninja"></i>
@@ -48,7 +48,7 @@
                         <div class="inner">
                             <h3></h3>
 
-                            <p>Jumlah Bidang</p>
+                            <p>Jumlah Staff</p>
                         </div>
                         <div class="icon">
                             <i class="fas fa-user-shield"></i>
@@ -63,7 +63,7 @@
                         <div class="inner">
                             <h3></h3>
 
-                            <p>Jumlah Staff</p>
+                            <p>Jumlah Tugas</p>
                         </div>
                         <div class="icon">
                             <i class="fas fa-users"></i>
@@ -78,7 +78,7 @@
                 <div class="col-lg-12">
                     <div class="card card-danger">
                         <div class="card-header">
-                            <h3 class="card-title">Jumlah Bidang Dalam Aspek</h3>
+                            <h3 class="card-title">Jumlah Bidang Dalam Departement</h3>
 
                             <div class="card-tools">
                                 <button type="button" class="btn btn-tool" data-card-widget="collapse">
