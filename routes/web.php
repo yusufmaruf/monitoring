@@ -10,6 +10,7 @@ use App\Http\Controllers\DraftController;
 use App\Http\Controllers\KAbidangController;
 use App\Http\Controllers\KAdepartementController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\SettingController;
 use App\Http\Controllers\StaffController;
 use App\Http\Controllers\TaskController;
 use Illuminate\Support\Facades\Route;
@@ -46,6 +47,7 @@ Route::prefix('admin')
         Route::resource('task', TaskController::class);
         Route::resource('draft', DraftController::class);
         Route::resource('document', DocumentTaskController::class);
+        Route::resource('setting', SettingController::class);
     });
 
 
